@@ -179,7 +179,6 @@ input {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
         background: rgba(0, 0, 0, 0.5);
         overflow: scroll;
         scrollbar-width: none;
@@ -191,7 +190,6 @@ input {
         border-radius: 10px;
         width: 300px;
         text-align: center;
-        height: 90%;
     }
     #sudoku-container {
         background-color: #fff;
