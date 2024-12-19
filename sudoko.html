@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="sudoko.css">
+</head>
+<body>
+    <!-- Initial Page -->
+    <div id="intro-page">
+        <div class="start-page">
+            <h1>Let's Play Sudoku</h1>
+            <button id="start-button">Start</button>
+        </div>
+    </div>
+
+    <!-- Instruction Modal -->
+    <div id="instruction-modal" class="modal">
+        <div class="modal-content">
+            <h2>Instructions</h2>
+            <p style="text-align: left;">1. Fill in the numbers from 1 to 9 in the Sudoku grid.</p>
+            <p style="text-align: left;">2. The numbers in each row, column, and 3x3 subgrid must be unique.</p>
+            <h2>How to Play:</h2>
+            <p style="text-align: left;">1.Some numbers are pre-filled as clues.</p>
+            <p style="text-align: left;">2.Click on an empty cell and enter a number between 1 and 9.</p>
+            <p style="text-align: left;">3.Ensure that the same number does not repeat in:</p>
+            <p style="text-align: left;">4.Any row.</p>
+            <p style="text-align: left;">5.Any column.</p>
+            <p style="text-align: left;">6.Any 3×3 box.</p>
+            <button id="agree-button">I Agree</button>
+        </div>
+    </div>
+
+    <!-- Sudoku Game -->
+    <div id="sudoku-container" class="hidden">
+        <table id="sudoku-board"></table>
+        <div class="controls">
+            <button id="solve-button">Solve</button>
+            <button id="check-button">Check</button>
+            <button id="clear-button">Clear</button>
+        </div>
+    </div>
+    <div id="try-again-modal" class="modal hidden">
+        <div class="modal-content">
+            <p>Solution filled! Try solving another one.</p>
+            <button id="try-again-button">OK</button>
+        </div>
+    </div>
+    
+    <!-- Congratulations Modal -->
+    <div id="congratulations-modal" class="modal">
+        <div class="modal-content">
+            <h2>Congratulations!</h2>
+            <p>You solved the Sudoku correctly!</p>
+            <button id="play-again-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="sudoko.js"></script>
+</body>
+</html>
